@@ -17,7 +17,7 @@ add_filter( 'site_transient_update_plugins', function( $transient ){
 		'plugin'      => $plugin_file,
 		'slug'        => $plugin_file,
 		'new_version' => $plugin_data['Version'] . '.1'
-		'package'     => 'https://github.com/khag7/this-plugin-always-needs-to-be-updated/
+		'package'     => 'https://github.com/khag7/this-plugin-always-needs-to-be-updated/archive/master.zip'
 	);
 	
 	return $transient;
