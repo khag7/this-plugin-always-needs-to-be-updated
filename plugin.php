@@ -1,7 +1,7 @@
 <?php
 /*
     Plugin Name: This Plugin Always Needs To Be Updated
-	Description: This will always show as an available update. Also, the slug for this plugin has special characters, similar to a WooThemes plugin.
+	Description: When active, this plugin will always show that it has an update available, the slug for this plugin has special characters, similar to a WooThemes plugin.
 	Author: Kevin Hagerty
 	Author URI: https://profiles.wordpress.org/khag7/
 	Version: 1.0
