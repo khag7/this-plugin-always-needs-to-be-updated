@@ -41,6 +41,7 @@ add_filter( 'plugins_api', function( $false, $action, $args ){
 
 //echo whatever content we want to display in the plugin information iframe
 add_action( 'install_plugins_pre_plugin-information', function(){
+	if ( $_GET['plugin'] !== plugin_basename( __FILE__ ) ) return;
 	?>
 		<h2>This Plugin Always Needs To Be Updated</h2>
 		<a href="https://github.com/khag7/this-plugin-always-needs-to-be-updated/" target="_blank">Available on Github</a>
