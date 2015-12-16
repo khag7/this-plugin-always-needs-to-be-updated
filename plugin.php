@@ -35,7 +35,7 @@ add_filter( 'site_transient_update_plugins', function( $transient ){
 
 //Override the plugins_api -- return true to suprress the normal plugin information iframe content from showing
 add_filter( 'plugins_api', function( $false, $action, $args ){
-	if ( $action == 'plugin_information' && $args['slug'] == plugin_basename( __FILE__ ) ) return true;
+	if ( $action == 'plugin_information' && $args->slug == plugin_basename( __FILE__ ) ) return true;
 	return $false;
 }, 10, 3 );
 
